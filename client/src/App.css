@@ -1,0 +1,72 @@
+.cart-btn {
+  border-radius: 50px;
+  border: 0;
+}
+.cart-btn {
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.cart-btn:hover {
+  background-color: #051922;
+  color: #F28123;
+}
+.cart-btn:focus {
+  outline: 0;
+}
+.cart-btn {
+  font-family: 'Poppins', sans-serif;
+  display: inline-block;
+  background-color: #F28123;
+  color: #fff;
+  padding: 10px 20px;
+}
+.cart-btn i {
+  margin-right: 5px;
+}
+.single-product-form .cart-btn {
+  margin-bottom: 15px;
+}
+
+.product-remove button {
+  border: 0;
+  background-color: transparent;
+}
+
+.accordion .accordion-item {
+  border: 1px solid #eeeeee;
+  margin-bottom: 1.25rem;
+}
+.accordion .accordion-header {
+  margin: 0;
+}
+.accordion .accordion-body {
+  padding: 1.25rem;
+}
+.accordion .accordion-header button {
+  color: #051922;
+  font-size: 15px;
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 20px;
+  text-decoration: none;
+  border: none;
+  background-color: #EFEFEF;
+  position: relative;
+  padding-left: 50px;
+  font-weight: 600;
+  outline: none;
+  border-radius: 0.25rem;
+}
+.accordion .accordion-header button:before {
+  position: absolute;
+    left: 20px;
+    top: 50%;
+    content: "\f058";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    line-height: 22px;
+    margin-top: -11px;
+    color: #F28123;
+}
