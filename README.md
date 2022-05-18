@@ -6,6 +6,16 @@ This is a simple shopping cart app created using React JS, NodeJS with Express a
 
 
 
+## Screenshots
+
+![App Screenshot](https://raw.githubusercontent.com/johnjasontaladro/react-mongodb-shopping-cart/master/screenshots/screenshot1.PNG)
+![App Screenshot](https://raw.githubusercontent.com/johnjasontaladro/react-mongodb-shopping-cart/master/screenshots/screenshot2.PNG)
+![App Screenshot](https://raw.githubusercontent.com/johnjasontaladro/react-mongodb-shopping-cart/master/screenshots/screenshot3.PNG)
+![App Screenshot](https://raw.githubusercontent.com/johnjasontaladro/react-mongodb-shopping-cart/master/screenshots/screenshot4.PNG)
+![App Screenshot](https://raw.githubusercontent.com/johnjasontaladro/react-mongodb-shopping-cart/master/screenshots/screenshot5.PNG)
+![App Screenshot](https://raw.githubusercontent.com/johnjasontaladro/react-mongodb-shopping-cart/master/screenshots/screenshot6.PNG)
+
+
 ## Environment Variables
 
 To run this project, you will need to add the following environment variables to your .env file
