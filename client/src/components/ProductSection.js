@@ -2,6 +2,7 @@ import { useContext, useEffect, useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../App";
 import Cart from "../helpers/Cart";
+import Util from "../helpers/Util";
 
 function ProductSection() {
   const [allProducts, setAllProducts] = useState([]);
@@ -10,14 +11,13 @@ function ProductSection() {
   const navigate = useNavigate();
 
   async function getAllProducts() {
-    const res = await fetch("http://localhost:1337/api/getAllProducts");
+    const res = await fetch(process.env.REACT_APP_GET_ALL_PRODUCTS_URL);
 
     const data = await res.json();
 
     if (data.status === "ok") {
       const resAllProducts = data.allProducts.map((product, index) => {
-        product.image =
-          "http://localhost:1337" + product.image.replace("uploads", "static");
+        product.image = Util.generateProductImage(product.image);
 
         return product;
       });

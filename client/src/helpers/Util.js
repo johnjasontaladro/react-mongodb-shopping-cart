@@ -1,6 +1,9 @@
 const Util = {
   generateProductImage(productImage) {
-    return "http://localhost:1337" + productImage.replace("uploads", "static");
+    return (
+      process.env.REACT_APP_SERVER_URL +
+      productImage.replace("uploads", "static")
+    );
   },
 };
 

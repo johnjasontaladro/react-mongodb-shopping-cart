@@ -14,7 +14,7 @@ function ProductDetailsSection() {
   const { cart, setCart } = useContext(AppContext);
 
   const getProductDetails = useCallback(async () => {
-    const res = await fetch("http://localhost:1337/api/getProductBySlug", {
+    const res = await fetch(process.env.REACT_APP_GET_PRODUCT_BY_SLUG_URL, {
       headers: {
         "Content-Type": "application/json",
       },

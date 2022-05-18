@@ -2,6 +2,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AppContext } from "../App";
 import Cart from "../helpers/Cart";
+import Util from "../helpers/Util";
 
 function FeaturedProductSection() {
   const [productList, setProductList] = useState([]);
@@ -9,14 +10,13 @@ function FeaturedProductSection() {
   const navigate = useNavigate();
 
   async function getFeaturedProducts() {
-    const res = await fetch("http://localhost:1337/api/getFeaturedProducts");
+    const res = await fetch(process.env.REACT_APP_GET_FEATURED_PRODUCT_URL);
 
     const data = await res.json();
 
     if (data.status === "ok") {
       const featuredProducts = data.featuredProducts.map((product, index) => {
-        product.image =
-          "http://localhost:1337" + product.image.replace("uploads", "static");
+        product.image = Util.generateProductImage(product.image);
 
         return product;
       });
