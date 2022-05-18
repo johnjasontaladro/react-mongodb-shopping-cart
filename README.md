@@ -16,15 +16,29 @@ This is a simple shopping cart app created using React JS, NodeJS with Express a
 ![App Screenshot](https://raw.githubusercontent.com/johnjasontaladro/react-mongodb-shopping-cart/master/screenshots/screenshot6.PNG)
 
 
-## Environment Variables
+## Environment Variables for Client
+
+To run this project, you will need to add the following environment variables to your .env file in client root directory
+
+`REACT_APP_SERVER_BASE_URL`
+
+`REACT_APP_SERVER_PORT`
+
+`REACT_APP_SERVER_URL`
+
+`REACT_APP_GET_FEATURED_PRODUCT_URL`
+
+`REACT_APP_GET_ALL_PRODUCTS_URL`
+
+`REACT_APP_GET_PRODUCT_BY_SLUG_URL`
+
+## Environment Variables for Server
 
 To run this project, you will need to add the following environment variables to your .env file
 
 `MONGODB_CONNECTION_STRING`
 
 `PORT`
-
-
 ## Run Locally
 
 Clone the project
