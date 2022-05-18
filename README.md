@@ -3,6 +3,8 @@
 
 This is a simple shopping cart app created using React JS, NodeJS with Express and MongoDB.
 
+TODO: Payment Gateway is not implemented.
+
 
 
 
